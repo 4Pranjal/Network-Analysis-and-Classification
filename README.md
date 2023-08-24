@@ -1,117 +1,79 @@
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <h3 align="center">Network Analysis and Classification</h3>
-  <p align="center">
-    A comprehensive data analysis and SVM classification example.
-    <br />
-    <a href="https://github.com/4Pranjal/network-analysis-and-classification"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/4Pranjal/network-analysis-and-classification/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/4Pranjal/network-analysis-and-classification/issues">Request Feature</a>
-  </p>
-</p>
+# Network Analysis and Classification
 
-<!-- TABLE OF CONTENTS -->
+This repository contains Python code for analyzing and classifying datasets using Machine Learning techniques. It includes data preprocessing, visualization, and classification using Support Vector Machine (SVM) and Backpropagation neural networks. Two datasets are used: Ring datasets and the Bank Marketing dataset.
+
 ## Table of Contents
 
-* [About the Project](#about-the-project)
-  * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Code Explanation](#code-explanation)
-* [Contributing](#contributing)
-* [License](#license)
+- [Introduction](#introduction)
+- [Datasets](#datasets)
+- [Installation](#installation)
+- [Usage](#usage)
+- [SVM Classification](#svm-classification)
+- [Backpropagation Classification](#backpropagation-classification)
+- [Contributing](#contributing)
+- [License](#license)
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+## Introduction
 
-This project demonstrates data analysis and Support Vector Machine (SVM) classification using Python. It includes loading and preprocessing datasets, performing exploratory data analysis, and applying SVM classification.
+This project showcases the process of analyzing and classifying datasets using Machine Learning techniques. It demonstrates the use of Python libraries like Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, and more.
 
-### Built With
+## Datasets
 
-* [Python](https://www.python.org/)
-* [Pandas](https://pandas.pydata.org/)
-* [NumPy](https://numpy.org/)
-* [Matplotlib](https://matplotlib.org/)
-* [Seaborn](https://seaborn.pydata.org/)
-* [scikit-learn](https://scikit-learn.org/)
+The project uses two types of datasets for analysis and classification:
 
-<!-- GETTING STARTED -->
-## Getting Started
+1. **Ring Datasets:**
+   - `ring_separable.txt`: Separable ring dataset.
+   - `ring_merged.txt`: Merged ring dataset.
+   - `ring_test.txt`: Test ring dataset.
+   - The datasets are loaded, visualized, and preprocessed for SVM classification.
 
-To get a local copy up and running, follow these simple steps.
+2. **Bank Marketing Dataset:**
+   - `bank-additional-full.csv`: Bank marketing dataset.
+   - The dataset is loaded, visualized, preprocessed, and classified using SVM.
 
-### Prerequisites
+## Installation
 
-* Python (>= 3.6)
-* Pip (Python package manager)
+To run the code locally, follow these steps:
 
-### Installation
-
-1. Clone the repository
-   ```sh
-   git clone https://github.com/4Pranjal/network-analysis-and-classification.git
-   ```
-2. Navigate to the repository
-   ```sh
-   cd network-analysis-and-classification
-   ```
-3. Install required libraries
-   ```sh
-   pip install -r requirements.txt
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/4Pranjal/Network-Analysis-and-Classification.git
+   cd Network-Analysis-and-Classification
    ```
 
-<!-- CODE EXPLANATION -->
-## Code Explanation
+2. Install required libraries:
+   ```bash
+   pip install pandas numpy matplotlib seaborn scikit-learn
+   ```
 
-The provided code (`analysis_and_classification.py`) performs the following tasks:
+3. Place the necessary dataset files in the repository folder.
 
-1. **Import Necessary Libraries:**
-   - Imports `pandas`, `numpy`, `matplotlib.pyplot`, and `seaborn` for data manipulation, numerical operations, data visualization, and statistical data visualization.
+## Usage
 
-2. **Load and Plot Ring Datasets:**
-   - Loads ring datasets (`ring_separable`, `ring_merged`, `ring_test`) from text files.
-   - Corrects separator to tab ('\t') and inspects data.
-   - Calls `plot_dataset` (not provided) to plot ring datasets.
+1. Open the Python script `dataset_analysis.py` in your preferred Python environment.
+2. Ensure that the required dataset files are in the same folder.
+3. Run the script to perform data analysis, preprocessing, and classification.
 
-3. **Load and Analyze Bank Marketing Dataset:**
-   - Loads bank marketing dataset (`bank_marketing`) from a CSV file.
-   - Prints initial rows and target distribution.
-   - Plots distribution of categorical features.
+## SVM Classification
 
-4. **Preprocess Data:**
-   - Defines `preprocess_data` function to split, normalize, and split data.
-   - Preprocesses ring datasets (`ring_separable`, `ring_merged`).
+- SVM classification is performed using the Support Vector Machine algorithm.
+- Hyperparameter tuning is done using GridSearchCV.
+- ROC curve is plotted to evaluate the classification performance.
 
-5. **SVM Classification:**
-   - Defines `svm_classification` function to perform SVM classification.
-   - Uses `GridSearchCV` to find best parameters, predicts, and plots ROC curve.
-   - Performs SVM classification for ring datasets.
+## Backpropagation Classification
 
-6. **Preprocess and Classify Bank Marketing Dataset:**
-   - Preprocesses bank marketing dataset using `preprocess_bank_data` function.
-   - Performs SVM classification for bank marketing dataset.
+- Backpropagation neural network classification is performed for both Ring datasets and the Bank Marketing dataset.
+- The `bp_classification()` function is used for Backpropagation classification.
 
-<!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions to enhance the functionality or improve the code are welcome. Here's how you can contribute:
+Contributions to enhance the functionality, improve code readability, or add new features are welcome. Here's how you can contribute:
 
 1. Fork the repository.
 2. Create a new branch.
 3. Make your improvements.
 4. Open a pull request.
 
-<!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[product-screenshot]: images/screenshot.png
- 
+This project is licensed under the [MIT License](LICENSE).
