@@ -1,0 +1,8 @@
+Ring dataset (A2-ring.zip):
+o Training: ring-separable.txt, ring-merged.txt
+o Test: ring-test.txt
+o 2 input features + 1 class identifier (0 / 1)
+o Two different training sets, one easy (separable) and one more difficult (merged)
+o Only one test set for both training sets
+o All data files have 10000 patterns
+o Since there are only two input features, plot the data to know the meaning of this classification task
