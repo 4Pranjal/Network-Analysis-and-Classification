@@ -67,13 +67,19 @@ To run the code locally, follow these steps:
 
 ## Contributing
 
-Contributions to enhance the functionality, improve code readability, or add new features are welcome. Here's how you can contribute:
-
-1. Fork the repository.
-2. Create a new branch.
-3. Make your improvements.
-4. Open a pull request.
+Contributions are welcome! If you find any issues or have suggestions for improvements, please create an issue or pull request in this repository.
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+---
+## Credits
+
+This repository is maintained by 4Pranjal. Feel free to use and modify the code for educational and research purposes.
+
+For any questions or suggestions, you can contact me through my GitHub profile: [@4Pranjal](https://github.com/4Pranjal).
+
+Made with ❤️ by [Pranjal Jain](https://github.com/4Pranjal)
+
+
